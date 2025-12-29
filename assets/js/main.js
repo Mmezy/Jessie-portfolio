@@ -20,6 +20,38 @@ if(navClose){
 /*=============== REMOVE MENU MOBILE ===============*/
 
 
+
+
+
+
+
+
+
+
+
+
+/*=============== SWIPER POPULAR ===============*/
+const swiperPopular = new Swiper('.popular__container', {
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteration: false,
+    },
+
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
 /*=============== ADD BLUR HEADER ===============*/
 const blurHeader = () =>{
     const header = document.getElementById('header')
@@ -98,5 +130,5 @@ sr.reveal('.home__data, .experience, .skills, .contact__container')
 sr.reveal('.home__img', {delay: 600})
 sr.reveal('.home__scroll', {delay: 800})
 sr.reveal('.work__card, .services__card', {interval: 100})
-sr.reveal('.about__content', {origin: 'right'})
-sr.reveal('.about__img', {origin: 'left'})
+sr.reveal(' .about__details', {origin: 'right'})
+sr.reveal('.about__content, .about__img', {origin: 'left'})
